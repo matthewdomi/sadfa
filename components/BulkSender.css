@@ -1,0 +1,56 @@
+/* Common styles */
+.bulk-sender-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 600px; /* Max width for the container */
+    margin: auto; /* Center the container */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Light Theme */
+.light-mode {
+    background: rgba(255, 255, 255, 0.9); /* Lighter background for light mode */
+    color: #ff8c00; /* Dark orange text for light mode */
+}
+
+/* Dark Theme */
+.dark-mode {
+    background: rgba(31, 32, 35, 0.9); /* Darker background for dark mode */
+    color: #ffa500; /* Light orange text for dark mode */
+}
+
+/* Input and Button Styles */
+input[type="file"],
+textarea,
+button {
+    width: 100%; /* Full width for inputs */
+    margin: 10px 0; /* Margin for spacing */
+    padding: 10px; /* Padding for inputs */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Textarea */
+textarea {
+    height: 100px; /* Fixed height for the textarea */
+}
+
+/* Button Styles */
+button {
+    background-color: #ff8c00; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #e07b00; /* Darker shade on hover */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red; /* Error message color */
+}
