@@ -58,6 +58,7 @@ function updateContactsList() {
     contactsList.innerHTML = '';
 
     document.getElementById('send-messages').addEventListener('click', handleSendMessages);
+}
 
 function handleSendMessages() {
     // Your existing code for handling messages...
