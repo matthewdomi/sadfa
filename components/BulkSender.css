@@ -25,6 +25,7 @@
 /* Input and Button Styles */
 input[type="file"],
 textarea,
+input[type="text"],
 button {
     width: 100%; /* Full width for inputs */
     margin: 10px 0; /* Margin for spacing */
@@ -32,11 +33,13 @@ button {
     border: none; /* Remove default border */
     border-radius: 5px; /* Rounded corners for inputs */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-size: 16px; /* Font size for better readability */
 }
 
 /* Textarea */
 textarea {
     height: 100px; /* Fixed height for the textarea */
+    resize: none; /* Disable resizing */
 }
 
 /* Button Styles */
@@ -44,13 +47,38 @@ button {
     background-color: #ff8c00; /* Button color */
     color: white; /* Button text color */
     cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove default border */
 }
 
 button:hover {
     background-color: #e07b00; /* Darker shade on hover */
 }
 
+/* Image Preview Styles */
+img {
+    border-radius: 5px; /* Rounded corners for image preview */
+    margin-top: 10px; /* Margin for spacing */
+}
+
 /* Error Message Styles */
 .error-message {
     color: red; /* Error message color */
+    font-weight: bold; /* Bold error message */
+    margin-top: 10px; /* Margin for spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .bulk-sender-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
 }
